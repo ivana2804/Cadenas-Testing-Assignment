@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en-Us">
+<head>
+    <title>Buy ticket</title>
+    <link rel="stylesheet" href="css/styledrugidio.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+    <header>
+        <h1>Buy your ticket here</h1>
+    </header>
+<!-- komentar -->
+ 
+
+<table class="glavnatablica">
+    <caption>
+
+   <b>Ticket selection</b>
+
+
+    </caption>
+    <tr>
+        <td class="tdglavni">
+
+            <img src="img/starwars.jpg" width="70" align="left"/>
+            Star Wars: Episode IX - 
+            <br>The Rise of Skywalker
+            <br>
+            <small><i>Action, Adventure, Fantasy </i></small>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+            <table width="480px" border="0" bgcolor="#d6d6d6">
+
+                <tr>
+                    <td width="120px"> Price category</td>
+                    <td width="120px">  Tickets</td>
+                    <td width="120px"> Price</td>
+                    <td width="120px"> Total</td>
+                </tr>
+    
+                <tr>
+                    <td width="120px"> Oridanry</td>
+                    <td width="120px" > <!-- ovdje kupac treba moći sam odabrati broj karata-->
+                       
+                        <select name="brojkarata" id="brojkarata">
+                            <option selected="selected">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                            
+
+
+
+                    </td>
+    
+                    <td width="120px" class="subjects"> <!-- cijena same karte-->
+                        20.00 kn</td>
+                    <td width="120px" id="TotMarks"> <!-- ovdje se treba izracunavati total-->
+                        </td>
+                </tr>
+    
+                <tr>
+                    <td width="120px"> <!-- prazno polje--></td>
+                    <td width="120px"> 
+    <!-- Tu upisuje konacan broj odabranih karata-->
+                    </td width="120px">
+                    <td width="120px"><!-- prazno polje--> </td>
+                    
+                    <td width="120px"> <!-- upisuje se konačni total--></td>
+                </tr>
+    
+                </table>
+
+                <span id="val"></span>
+
+                <script>
+                    var table = document.getElementById("table"), sumVal;
+
+                        for(var i = 1; i < table.rows.length; i++)
+                        {
+                            sumVal = table.rows[i].cells[2].innerHTML;
+                        }
+
+                        console.log(sumVal)
+                </script>
+
+
+
+
+
+            <!-- Tu moram osmisliti kako ce se ovo mjenjati s obzirom na odabrani izbor -->
+
+        </td>
+
+
+        <td class="tdglavni">Curent action</td>
+ 
+    </tr>
+
+    <tr>
+        <td class="tdglavni">Seating plan
+
+           
+
+
+
+<!-- Tu moram dodati brojac koji ce mi racunati karete i moram doadti plan sjedenja -->
+
+        </td>
+
+        <td class="tdglavni">  
+            INFO:
+            <br>
+            You can make reservations only up to 60 minutes before show starts.
+            <br>
+            If the system does not allow reservations, percentage of possible reservations has been reached (40%) or you have more than 2 active reservations. If you are unable to select seats, they are selected by other users.
+            <br>
+            <br>
+        <button>Add to shopping cart</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <a href="1diostranice.html">
+        <button> &larr; Back to preformance list</button>
+        </a>
+        <br>
+
+
+
+        </td>
+ 
+    </tr>
+
+
+
+
+</table>
+
+
+    <footer>Author: Ivana  </footer>
+    
+
+
+
+
+
+
+</div>
+</body>
+</html>

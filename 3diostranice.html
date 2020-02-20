@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en-Us">
+<head>
+    <title>Buy ticket</title>
+    <link rel="stylesheet" href="css/styletrecidio.css"/>
+</head>
+
+<body>
+    <div id="container">
+    <header>
+        <h1>Buy your ticket here</h1>
+    </header>
+<!-- komentar -->
+ 
+    <table>
+        <caption> 
+            <b>Your shopping cart</b>
+        </caption>
+
+        <tr bgcolor="#d6d6d6">
+            <td>Added</td>
+            <td>Description</td>
+            <td>Price</td>
+            <td>Options</td>
+        </tr>
+
+        <tr>
+            <td>
+
+                <p id="time"></p>
+
+                <script>
+
+                var d = new Date();
+                document.getElementById("time").innerHTML = d.toUTCString();
+
+                </script>
+
+
+
+            </td>
+            <td> 
+                Star Wars: Episode IX - 
+                <br>The Rise of Skywalker
+                <br>
+                <small><i>Action, Adventure, Fantasy </i></small>
+            </td>
+            <td>20,00 HRK</td>
+            <td> 
+
+                <select name="card" id="card">
+                    <option selected="selected">Maestro</option>
+                    <option>MasterCard</option>
+                    <option>Visa</option>
+                    
+                  </select>
+
+
+
+            </td>
+        </tr>
+
+        <tr bgcolor="#d6d6d6">
+            <td> <!-- Prazno --> </td>
+            <td> <!-- Prazno --> </td>
+            <td> Ukupna cijena </td>
+            <td> <!-- Prazno --> </td>
+        </tr>
+
+
+    </table> 
+
+    <br>
+    <br>
+    
+    <div id="return">
+    <a href="1diostranice.html">
+        <button> &larr; Return to preformance list</button>
+    </a>
+    </div>
+    
+    <div id="checkout">
+        <button>Proceed to checkout</button>
+    </div>
+     
+
+
+    <footer>Author: Ivana</footer>
+
+</div>
+</body>
+</html>
